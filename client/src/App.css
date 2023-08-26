@@ -1,0 +1,618 @@
+/* Basic styling */
+
+
+* {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #000;
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Homepage */
+
+
+
+#heroSection {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #183d28, #09160e, #040a07, #050505, #000);
+  /* padding-right: 40px; 
+  
+  
+  
+   */
+}
+
+/* #bgContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  display: none;
+}
+
+#bgContainer video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+} */
+
+
+#heroContainer {
+  position: relative;
+  top: 180px;
+  left: 70px;
+  z-index: 1;
+}
+
+#heroText {
+  font-size: 5rem;
+  font-family: 'DM Serif Display', serif;
+  color: #fff;
+}
+
+#heroDescription {
+  margin-top: 15px;
+  margin-left: 2px;
+  font-size: 1.3rem;
+  color: #ccc;
+  width: 50%;
+}
+
+#searchContainer {
+  margin-top: 20px;
+}
+
+#searchButton {
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  margin-left: 20px;
+  transition: .3s;
+}
+
+#searchBox {
+  font-size: 1.3rem;
+  height: 50px;
+  width: 500px;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding-left: 15px;
+  outline: none;
+  transition: .3s;
+}
+
+#searchBox::placeholder {
+  color: #aaa;
+}
+
+#searchBox:focus {
+  box-shadow: 0 0 10px #aaa;
+}
+
+#searchButton:hover, #loginButton:hover, #moreCards:hover {
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#features {
+  position: relative;
+  top: 300px;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 16% 16% 16% 16% 16% 16%;
+  align-items: center;
+  margin-left: 70px;
+}
+
+#featureCard {
+  height: 280px;
+  width: 240px;
+  border-radius: 24px;
+  background: rgba(200, 200, 200, 0.1);
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: .3s;
+}
+
+#featureArt {
+  margin-bottom: 25px;
+  margin-top: -10px;
+}
+
+#featureText {
+  color: #fff;
+  font-size: 20px;
+}
+
+#featureDescription {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+#moreCards {
+  border: 1px solid #fff;
+  padding: 15px;
+  margin-top: -15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 12px;
+  width: 150px;
+}
+
+#featureCard:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+footer {
+  background: #000;
+  margin-top: 150px;
+}
+
+#hcFooterLogo {
+  width: 40px;
+  margin-right: 4px;
+  border: 1px solid #48bb78;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+
+
+
+/* NavBar */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  margin-top: 20px;
+}
+
+#hamburgerMenu > span{
+  display: none;
+  color: #fff;
+  font-size: 38px;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+
+#navContainer {
+  height: 80px;
+  width: 94vw;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  background: rgba(8, 8, 8, 0.2);
+  backdrop-filter: blur(4px);
+}
+
+#navigationContainer {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  align-items: center;
+}
+
+#navItems a {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 30px;
+  font-size: 1rem;
+  padding-bottom: 2px;
+  border-bottom: 0 solid #eee;
+}
+
+.activeNav, #navItems a:hover {
+  border-bottom: 2px solid #eee;
+}
+
+#hcLogoContainer {
+  background: transparent;
+  padding: 8px;
+  border-radius: 70px;
+  border: 2px solid #48bb78;
+  width: 45px;
+  height: 45px;
+  margin-left: 30px;
+}
+
+#hcLogo {
+  width: 40px;
+}
+
+#loginButton {
+  font-size: 1.1rem;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  transition: .3s;
+}
+
+#logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#headingText {
+  margin-top: 8px;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+
+/* Login/Register page */
+
+#loginWelcomeText {
+  font-size: 24px;
+  color: #5ce695;
+}
+
+#loginText {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+#loginPageContainer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#loginCard, #registerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  background: rgba(35, 35, 35, 0.2);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 14px rgba(35, 35, 35, 0.3);
+  border-radius: 20px;
+  margin-top: 40px;
+  animation-name: loginCard;
+  animation-duration: .7s;
+  opacity: 1;
+}
+
+#registerCard {
+  height: 500px;
+}
+
+@keyframes loginCard {
+  from {
+    height: 600px;
+    width: 600px;
+    opacity: 0;
+  }
+}
+
+#loginBgContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  object-fit: cover;
+  filter: brightness(0.65) contrast(1.6) saturate(50%);
+}
+
+#registerBgContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  z-index: 0;
+  object-fit: cover;
+  filter: brightness(0.65) contrast(1.6) saturate(50%) hue-rotate(50deg);
+  animation: registerBg 4s;
+}
+
+@keyframes registerBg {
+  from {
+    filter: brightness(0.65) contrast(1.6) saturate(50%) hue-rotate(0deg);
+  }
+}
+
+#label {
+  color: #fff;
+  font-size: 16px;
+  display: none;
+}
+
+#textField input {
+  height: 45px;
+  width: 320px;
+  background: rgba(50, 50, 50, 0.3);
+  border-radius: 12px;
+  outline: none;
+  padding-left: 10px;
+  color: #fff;
+  border: 2px solid transparent;
+  transition: .18s;
+}
+
+#textField input::placeholder {
+  color: #999;
+}
+
+#textField input:focus {
+  border: 2px solid #48bb78;
+}
+
+#textField {
+  margin-top: 15px;
+}
+
+#buttonContainer {
+  display: flex;
+  margin-left: -20px;
+  margin-top: 2px;
+}
+
+#loginPageButton {
+  background: #48bb78;
+  color: #fff;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+#registerButton {
+  color: #fff;
+  border: 2px solid #48bb78;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+#buttonContainer button {
+  transition: .2s;
+}
+
+#buttonContainer button:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+#forgotPassword {
+  color: #5ce695;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+
+
+/* SearchScreen */
+
+#searchScreenContainer {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, #183d28, #09160e, #040a07, #050505, #000);
+  padding-top: 130px;
+}
+
+#searchPageBoxContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#searchPageBox {
+  height: 50px;
+  width: 500px;
+  border-radius: 14px;
+  border: 2px solid #bbb;
+  background: transparent;
+  color: #fff;
+  font-size: 25px;
+  padding: 0 10px;
+}
+
+#searchPageBox::placeholder {
+  color: #666;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#searchPageBox:focus {
+  box-shadow: 0 0 10px #48bb78;
+}
+
+#searchPageButton {
+  background: #fff;
+  margin-left: 20px;
+  border-radius: 100px;
+  transition: .2s;
+  border: 2px solid transparent;
+}
+
+#searchPageButton:hover {
+  transform: scale(1.05);
+  background: transparent;
+  border: 2px solid #48bb78;
+}
+
+#searchPageButton:hover > span {
+  color: #fff;
+}
+
+#searchPageButton span {
+  color: #000;
+  font-size: 25px;
+  padding: 5px 12px;
+}
+
+#totalSearchResults {
+  font-size: 30px;
+  color: #fff;
+  margin-top: 40px;
+  margin-left: 200px;
+}
+
+#resultCategoryContainer {
+  margin-top: 15px;
+  margin-left: 200px;
+}
+
+#resultCategoryContainer > button {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 8px 12px;
+  border-radius: 60px;
+  margin-right: 16px;
+  transition: .2s;
+}
+
+#resultCategoryContainer > button:hover, .activeButton {
+  transform: scale(1.1);
+  color: #000 !important;
+  background: #fff;
+}
+
+#searchResultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+#doctorSearchResult {
+  height: 180px;
+  width: 80%;
+  border-radius: 30px;
+  background: rgba(35, 35, 35, 0.5);
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 38px;
+}
+
+#doctorPic {
+  height: 120px;
+  width: 120px;
+  background: #1f1f1f;
+  border-radius: 24px;
+}
+
+#doctorInfo {
+  margin-left: 50px;
+}
+
+#doctorText {
+  height: 30px;
+  width: 700px;
+  background: #1f1f1f;
+  border-radius: 20px;
+}
+
+#doctorDescription {
+  height: 20px;
+  width: 500px;
+  background: #1f1f1f;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+#doctorSearchResult > button {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  position: absolute;
+  /* float: right; */
+  right: 250px;
+
+  transition: .2s;
+}
+
+#doctorSearchResult > button:hover {
+  background: #fff;
+  color: #000;
+}
+
+@media only screen and (max-width: 1750px) {
+  #features {
+    grid-template-columns: 270px 270px 270px;
+    grid-template-rows: 56% 56%;
+  }
+  #moreCards {
+    margin-left: 40px;
+  }
+  #searchContainer {
+    margin-bottom: -50px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  #heroText {
+    width: 88%;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  #navItems {
+    display: none;
+  }
+  #hamburgerMenu > span {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  #features {
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 310px 310px 310px;
+    margin-left: 0;
+  }
+  footer {
+    margin-top: 350px;
+  }
+  #featuresContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+}
